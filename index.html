@@ -12,7 +12,8 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h1>K R Med Assessoria e Saúde</h1>
+                <img src="img/logo.png" alt="Logo da Clínica" class="logo" style="display: none;">
+                <h1>KR Med Assessoria & Saúde</h1>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -32,7 +33,17 @@
 
         <main class="content-area">
             <header class="top-header">
-                <h2>Dashboard Principal</h2>
+                <div class="header-left">
+                    <h2 id="page-title">Dashboard Principal</h2>
+                    <div class="location-selector">
+                        <label for="clinic-location">Localização:</label>
+                        <select id="clinic-location">
+                            <option value="global">Global </option>
+                            <option value="sao-paulo">Três Rios</option>
+                            <option value="valenca">Valença</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="user-info">
                     <span>Olá, Dr(a). Silva</span>
                     <i class="fas fa-user-circle"></i>
@@ -40,40 +51,7 @@
             </header>
 
             <section id="main-content" class="dashboard-content">
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Consultas Hoje</h3>
-                        <p class="card-value">12</p>
-                        <span class="card-detail">5 confirmadas</span>
-                    </div>
-                    <div class="card">
-                        <h3>Pacientes Ativos</h3>
-                        <p class="card-value">250</p>
-                        <span class="card-detail">Novos este mês: 15</span>
-                    </div>
-                    <div class="card">
-                        <h3>Próximas Tarefas</h3>
-                        <ul>
-                            <li>Revisar agenda de amanhã</li>
-                            <li>Ligar para paciente João S.</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Métricas Rápidas</h3>
-                        <p>Taxa de ocupação: 75%</p>
-                        <p>Faturamento estimado (mês): R$ 15.000</p>
-                    </div>
-                </div>
-
-                <div class="recent-activity">
-                    <h3>Atividade Recente</h3>
-                    <ul>
-                        <li><span class="timestamp">2 min atrás:</span> Agendamento de Maria A. para 15:00</li>
-                        <li><span class="timestamp">10 min atrás:</span> Dr. Carlos adicionou prontuário de Pedro L.</li>
-                        <li><span class="timestamp">1 hora atrás:</span> Paciente Ana P. cancelou consulta</li>
-                    </ul>
-                </div>
-            </section>
+                </section>
         </main>
     </div>
 
